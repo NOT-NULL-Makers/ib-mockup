@@ -1,0 +1,179 @@
+html, body, #app {
+  width: 100%;
+  justify-content: center;
+  font-family: 'Neue Haas Grotesk', sans-serif;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  font-size: 22px;
+  background-color: black;
+  display: flex;
+  color: white;
+}
+
+.name-input-card {
+  background-color: #282828;
+  padding: 40px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.name-input-card h1 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.name-input-card .name-input {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.name-input-card .name-input input {
+  background-color: #fba228;
+  color: black;
+  font-size: 22px;
+  padding: 8px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.name-input-card .name-input input::placeholder {
+  color: #8d4d09;
+}
+
+.name-input-card .name-input button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0;
+  background: white;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chat-window {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc( 100%  -  20px );
+  height: calc( 100%  -  18px );
+}
+
+.chat-window .top-panel {
+  border-bottom: 2px solid #646464;
+  width: 100%;
+  top: 0;
+  justify-content: flex-start;
+  height: calc( 40px  -  2px );
+  align-items: flex-end;
+  position: absolute;
+  display: flex;
+  left: 0;
+}
+
+.chat-window .top-panel .label {
+  bottom: 0;
+  background-color: #646464;
+  margin-right: auto;
+  padding: 8px 16px 6px 16px;
+}
+
+.chat-window .top-panel .label span {
+  font-size: 22px;
+}
+
+.chat-window .left-panel {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: calc( 300px  -  4px );
+  height: calc( 100%  -  42px );
+  border-right: 2px solid #646464;
+  border-left: 2px solid #646464;
+  border-bottom: 2px solid #646464;
+}
+
+.chat-window .bottom-panel {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  width: calc( 100%  -  302px );
+  border-right: 2px solid #646464;
+  border-bottom: 2px solid #646464;
+  height: calc( 60px  -  2px );
+  background-color: #282828;
+}
+
+.chat-window .bottom-panel .chat-input {
+  position: relative;
+  width: calc( 100%  -  6px );
+  height: calc( 100%  -  6px );
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 4px;
+  gap: 4px;
+  border: none;
+}
+
+.chat-window .bottom-panel .chat-input input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  outline: none;
+  font-size: 22px;
+  background-color: #fba228;
+  border-radius: 0;
+  display: block;
+  color: black;
+}
+
+.chat-window .bottom-panel .chat-input input::placeholder {
+  color: #8d4d09;
+}
+
+.chat-window .bottom-panel .chat-input button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0;
+  background: white;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.chat-window .chat-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  width: calc( 100%  -  302px );
+  height: calc( 100%  -  102px );
+  border-right: 2px solid #646464;
+  border-bottom: 2px solid #646464;
+}
+
+.chat-window .chat-wrapper .chat {
+  position: relative;
+  padding: 8px;
+  font-size: 22px;
+}
+
+.chat-window .chat-wrapper .chat .message {
+
+}
+
+.chat-window .chat-wrapper .chat .message .name {
+  text-transform: uppercase;
+  color: #d9d51c;
+  margin: 0 0 2px 0;
+}
+
+.chat-window .chat-wrapper .chat .message .time {
+  color: #6a6a6a;
+  margin-right: 8px;
+  font-weight: 200;
+}

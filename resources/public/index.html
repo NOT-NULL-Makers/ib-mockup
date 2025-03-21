@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB Mockup</title>
+    <link id="css-link" rel="stylesheet" href="/css/styles.css?v=initial" type="text/css">
+    <script>
+        // Simple cache-buster that updates the query parameter every few seconds.
+        setInterval(function() {
+          var link = document.getElementById("css-link");
+          link.href = "/css/styles.css?v=" + new Date().getTime();
+        }, 1000);
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script src="/js/main.js"></script>
+</body>
+</html>
